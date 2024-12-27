@@ -1,0 +1,40 @@
+{
+  "name": "doctorappointmentbookingsystem",
+  "version": "1.0.0",
+  "description": "doctor appointment booking system nodejs mysql",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node src/server.js",
+    "package": "babel src -d target --copy-files",
+    "start-server": "node target/server.js",
+    "start-server-pm2": "pm2 start target/server.js --name doctorappointmentbookingsystem",
+    "delete-server-pm2": "pm2 delete doctorappointmentbookingsystem"
+  },
+  "keywords": [
+    "doctor",
+    "appointment",
+    "booking",
+    "system",
+    "nodejs",
+    "mysql",
+    "elasticsearch",
+    "messenger",
+    "bot"
+  ],
+  "author": "Hary Pham",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "winston": "3.8.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.20.7",
+    "@babel/core": "7.20.12",
+    "@babel/node": "7.20.7",
+    "@babel/preset-env": "7.20.2",
+    "nodemon": "^2.0.4"
+  }
+}
